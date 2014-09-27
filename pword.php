@@ -55,7 +55,7 @@
             <div class="media-body">
               <h1 class="media-heading">XKCD Style Password Generator</h1>
                 <h2>Project 2</h2>
-                  <h3>Here is your Password</h3>
+                  <h3>Here is your Password:</h3>
 		           <h4>
                     <?php
 					    

@@ -65,16 +65,23 @@
                   <form action="pword.php" method="post">
                     
                     How many words in the password? (enter a whole number between 2 and 9)  &nbsp;
-                    <input type="number" name="pwordLength" maxlength="1" placeholder="2-9" min="2" max="9" required>
+                    <input type="number" name="pWordLength" maxlength="1" placeholder="2-9" min="2" max="9" required>
                     
                     <br>
                     
-                    Include a number? &nbsp; <input type ="checkbox" name="isNumber" value="true"> 
+                    Include a number? &nbsp; <input type ="checkbox" name="addNumbers" value="true"> 
                          
                     <br>
                     
-                    Include a special character? &nbsp; <input type ="checkbox" name="isSpecChar" value="true">
+                    Include a special character? &nbsp; <input type ="checkbox" name="addSpecChar" value="true">
                     <br>
+                    
+                    CamelCase the words (that is make the first character capitalized)? &nbsp; <input type ="checkbox" name="addCamel" value="true">
+                    <br>
+                    
+                    Include a dash between words? &nbsp; <input type ="checkbox" name="addDash" value="true">
+                    <br>
+                    
                     <br>
                     <input type="submit" value="Generate Password">
                      

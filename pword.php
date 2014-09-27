@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>dennisstevens.me</title>
+    <title>XKCD Style Password Generator</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -55,40 +55,38 @@
             <div class="media-body">
               <h1 class="media-heading">XKCD Style Password Generator</h1>
                 <h2>Project 2</h2>
-            
                   <h3>Here is your Password</h3>
-		          <h4>
+		           <h4>
                     <?php
+					    
+						// Defines all of the variables collected from the POST function of the html page
 					    $pWordLength = $_POST['pWordLength'];
 						$addNumbers = $_POST['addNumbers'];
 						$addSpecChar = $_POST['addSpecChar'];
 						$addDash = $_POST['addDash'];
 						$addCamel = $_POST['addCamel'];
 						
-						
+						// Establishes the array of words to be used in the password generation
 						$wordList = array("chicken","horse","swallow","barn","frenzy","wind","holiday","style","window","door","shark","turtle",
 						 "shine", "happy","tempest","coral", "battery", "cable", "runner", "walker","guitar", "hornet", "teapot", "worker", "cattle", 
 						 "widget", "wonder","tuxedo","gremlin","boat","bathtub","kitchen", "diner", "desert","nomad", "navy"); 
 						
 						
 						print("<br>");
-                        //print("Number of words = ".$pWordLength."<br>");
-					    //print("Include numbers = ".$addNumbers."<br>");
-					    //print("Include Special Characters = ".$addSpecChar."<br>");
-						//var_dump($_POST);
-						//print("<br>");
-						//print("addDash is set to".$addDash);
-						
+                        
+						// Generates the password based on the length selected
 						for($i = 1; $i<=$pWordLength; $i++)
 						{ 
-						    
+						    // Adds a dash if selected
 							if ($i!= 1 && $addDash == true)
 							{
 							    print("-");	
 							}
 							
+							//generates a random number used as the array index
 						    $word = $wordList[rand(0,35)];
 							
+							// Adds camelcase if selected
 							if ($addCamel == true)
 							{
 								print(ucwords($word));
@@ -99,15 +97,18 @@
 							}
 						}
 						
+						// Adds a number to the password if selected
 						if ($addNumbers == true)
 						{
 						   $pwordNumber = rand(1,99);
 						   print($pwordNumber);
 						}
 						
+						// Adds a special char if selected
 						if ($addSpecChar == true)
 						{
-							$specChar = rand(1,8);
+						   // Uses a random number variable to choose the special char
+						   $specChar = rand(1,8);
 						   switch ($specChar)
 						   {
 						       case "1":
@@ -137,17 +138,14 @@
 						   }
 						}
 						
-					  
-                    ?>
-                  </h4>
+					?>
+                   </h4>
                    
             </div>
           </li>
        </ul>
-     	
      </div>
-
-    </div>
+   </div>
     
     
 

@@ -15,7 +15,7 @@ Since some sites have criteria that require numbers or special characters, those
 You can also add camelcase words or hyphens in between words to help memorization.
 
 Demo
-Demo URL:
+Demo URL:http://www.screencast.com/users/cnsdws/folders/Default/media/3a6879b5-9c29-4c5b-8727-55a12413c80b
 
 Details for teaching team
 No login required.

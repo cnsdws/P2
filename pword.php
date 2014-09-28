@@ -75,7 +75,7 @@
 						print("<br>");
                         
 						// Generates the password based on the length selected
-						for($i = 1; $i<=$pWordLength; $i++)
+						for($i = 1; $i<= $pWordLength; $i++)
 						{ 
 						    // Adds a dash if selected
 							if ($i!= 1 && $addDash == true)
@@ -140,7 +140,6 @@
 						
 					?>
                    </h4>
-                   
             </div>
           </li>
        </ul>

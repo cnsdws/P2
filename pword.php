@@ -69,7 +69,8 @@
 						// Establishes the array of words to be used in the password generation
 						$wordList = array("chicken","horse","swallow","barn","frenzy","wind","holiday","style","window","door","shark","turtle",
 						 "shine", "happy","tempest","coral", "battery", "cable", "runner", "walker","guitar", "hornet", "teapot", "worker", "cattle", 
-						 "widget", "wonder","tuxedo","gremlin","boat","bathtub","kitchen", "diner", "desert","nomad", "navy"); 
+						 "widget", "wonder","tuxedo","gremlin","boat","bathtub","kitchen", "diner", "desert","nomad", "navy", "time", "window", "chess",
+						 "robot", "warbler", "eagle", "mexico", "canada", "jubilee", "mason", "college", "honest","honey", "burger","watch", "widow"); 
 						
 						
 						print("<br>");
@@ -84,7 +85,7 @@
 							}
 							
 							//generates a random number used as the array index
-						    $word = $wordList[rand(0,35)];
+						    $word = $wordList[rand(0,51)];
 							
 							// Adds camelcase if selected
 							if ($addCamel == true)
